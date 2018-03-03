@@ -59,25 +59,27 @@ define('INCLUDE_PATH', $config->physical_path . '/includes/');
 
 //set website defaults
 $config->title = THIS_PAGE;
-$config->banner = 'Widgets';
+$config->banner = 'Widgets2';
 $config->loadhead = '';//place items in <head> element
 
 switch(THIS_PAGE){
         
-    case 'contact.php':    
-        $config->title = 'Contact Page';    
+    case 'index.php':    
+        $config->title = 'Home Page';    
     break;
     
-    case 'appointment.php':    
-        $config->title = 'Appointment Page';
-        $config->banner = 'Widget Appointments!';
+    case 'customer_list.php':    
+        $config->title = 'Customer Page';
+        $config->banner = 'Customers!';
     break;
         
-   case 'template.php':    
-        $config->title = 'Template Page';    
+    case 'daily.php':    
+        $config->title = 'Daily Page';    
     break;    
         
-        
+    case 'contact.php':    
+        $config->title = 'Contact Page';    
+    break;    
 }
 
 //START NEW THEME STUFF
